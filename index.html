@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="uk">
+      <script src="script.js"></script>   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Планшети Galaxy Tab S11 - Samsung Store</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <a href="https://arko4325.github.io/Koshyk/index.html" class="cart" style="text-decoration: none;">
+    🛒 Кошик: <span id="cart-count">0</span>
+</a>
 </head>
 <body>
 
@@ -41,7 +44,8 @@
                                 <li>🦾 Титановий корпус</li>
                             </ul>
                             <div class="product-price">49 999 ₴</div>
-                            <a href="#" class="cta-button">Придбати</a>
+                             <button class="buy-btn" onclick="addToCart('Galaxy Tab S11 Ultra', 49999.00, 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSL9g-zbG6NA9Oa8anLHZHM1J1s8Vv4ZLKPo1yKXu-O3bY-eN80XwixSHzY30Jx7EOXznIbf5RT4w3gy7F-1CFvsMam5hI1FFySIhXO54XSJDXSvhOxwK5vTSeQiA&usqp=CAc')">Додати у кошик</button>
+      
                         </div>
                     </div>
 
@@ -57,12 +61,34 @@
                                 <li>💼 Компактний 11" дизайн</li>
                             </ul>
                             <div class="product-price">28 999 ₴</div>
-                            <a href="#" class="cta-button">Придбати</a>
+                          <button class="buy-btn" onclick="addToCart('Galaxy Tab S11 ', 28999.00, 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTq8U7891Jz4dR8m4cDSWz9UC9VUv_3bbGGlP07sdo-e5q9yT1WcC3cqqOA74OxATBDJEMfGqkXwCmCmjx7gsY5Afb2C0A0B-angwbunmXExoAoUb-XPgAV7P_a_wQAkA&usqp=CAc')">Додати у кошик</button>
+      
                         </div>
                     </div>
                     
                     </div>
-            </div>
+            
+
+
+              <div class="smartphone-grid"> 
+                    
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="https://i.ibb.co/60Dv9j5Z/image.webp"" alt="Galaxy Tab S11 Ultra">
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Galaxy Tab S10 Fe</h4>
+                            <ul class="product-specs">
+                                <li>🖥️ 10,9" дисплей</li>
+                                <li>🧠 Exynos 1580</li>
+                                <li>🦾 Пластиковий корпус</li>
+                            </ul>
+                            <div class="product-price">49 999 ₴</div>
+                             <button class="buy-btn" onclick="addToCart('Galaxy Tab S10 Fe', 19599.00, 'https://i.ibb.co/60Dv9j5Z/image.webp')">Додати у кошик</button>
+      
+                        </div>
+                    </div>
+              </div>
         </section>
 
     </main>
