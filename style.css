@@ -1,3 +1,31 @@
+.cart {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #020302;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+#cart-count {
+  transition: all 0.3s;
+}
+
+
+
+
+
 /* Базові налаштування */
 body {
     margin: 0;
@@ -7,7 +35,6 @@ body {
     line-height: 1.6;
 }
 
-/* ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -86,7 +113,13 @@ header .container {
     font-weight: bold;
 }
 
-/* 4. СІТКА КАТЕГОРІЙ (з index.html) */
+/* 3. ПРО МАГАЗИН */
+.about-text h3 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* 4. СІТКА ПРОДУКТІВ (Категорії з index.html) */
 .products h2 {
     text-align: center;
     font-size: 2em;
@@ -99,16 +132,13 @@ header .container {
     gap: 20px;
 }
 
-/* Загальні стилі для карток */
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
     transition: all 0.3s ease;
-    display: flex; 
-    flex-direction: column; 
-    padding: 20px; /* Додатковий padding для карток категорій */
-    text-align: center;
+    display: flex; /* <-- ВАЖЛИВО: для вирівнювання кнопки */
+    flex-direction: column; /* <-- ВАЖЛИВО: контент йде згори вниз */
 }
 
 .product-card:hover {
@@ -135,7 +165,7 @@ footer h3 { margin-top: 0; font-size: 1.5em; }
 
 
 /* ===============================================
-   СТИЛІ для сторінки `smartphones.html` 
+   НОВІ СТИЛІ для сторінки `smartphones.html` 
 ===============================================
 */
 
@@ -178,7 +208,7 @@ footer h3 { margin-top: 0; font-size: 1.5em; }
     padding: 0 20px 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; 
+    flex-grow: 1; /* <-- ВАЖЛИВО: "розтягує" цей блок на всю висоту */
 }
 
 .product-card-content h4 {
@@ -203,12 +233,12 @@ footer h3 { margin-top: 0; font-size: 1.5em; }
     font-size: 1.6em;
     font-weight: bold;
     color: #e60012; /* Фірмовий червоний */
-    margin-top: auto; /* Притискає ціну до низу, щоб усі картки були однакової висоти */
+    margin-top: auto; /* <-- МАГІЯ: притискає ціну до низу */
     margin-bottom: 15px;
 }
 
 /* Кнопка "Придбати" */
-.cta-button {
+.buy-btn{
     display: block;
     text-align: center;
     text-decoration: none;
@@ -220,6 +250,6 @@ footer h3 { margin-top: 0; font-size: 1.5em; }
     transition: background-color 0.2s ease;
 }
 
-.cta-button:hover {
+.buy-btn:hover {
     background-color: #0056b3;
 }
